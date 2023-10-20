@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+    <title>Загрузка файла</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/reset.css">
+  </head>
+  <body>
+    <!-- <div id="killnet">killnet</div> -->
+
+    <header class="header">
+        <div id="fon">
+            <div class="wrapper">
+                <div class="header_wrapper">
+                    <div class="header_logo"> <!-- Логотип -->        
+                        <a href="./index.html" class="header_logo-link">
+                            <img src="./img/svg/logo.svg"  alt="" class="header_logo-pic">
+                        </a>
+                    </div>
+                    <hr width="90%" color="#541212">
+                        
+                </div>
+    <form id="uploadForm">
+        <label for="images" class="drop-container" id="dropcontainer">
+            <span class="drop-title">Переместите файл сюда</span>
+            или
+            <input type="file"  id="fileInput" onchange="enableSubmit()" />
+        </label>
+
+      <br>
+      <div class="button">
+        <input type="submit" id="submitButton" value="Отправить" class="hidden button2" disabled />
+      </div>
+    </form>
+        </div>
+    </div>
+</header>
+    <div id="result"></div>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>

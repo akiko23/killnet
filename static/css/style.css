@@ -1,0 +1,202 @@
+/* laila-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Laila';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/laila-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* pt-sans-regular - cyrillic_cyrillic-ext_latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/pt-sans-v17-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+
+body{
+    color: #39383D;
+    font-family: PT Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+div#fon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.header_logo{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%; 
+    margin-top: 5%;
+}
+
+
+.button{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.button1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 261px;
+    height: 69px;
+    background: #DF2834;
+    border-radius: 12px;
+    border: 0;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.button2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 261px;
+    height: 69px;
+    background: white;
+    border-radius: 12px;
+    
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+
+    color: #000;
+    font-family: PT Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+
+.button2:enabled {
+  cursor: pointer;
+  color: white;
+  background-color: #ce142d;
+}
+
+
+.drop-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 1000px;
+    margin-top: 8%;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #555;
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+  }
+  
+  .drop-container:hover {
+    background: #eee;
+    border-color: #111;
+
+  }
+  
+  .drop-container:hover .drop-title {
+    color: #222;
+  }
+  
+  .drop-title {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+    
+  }
+
+
+
+input[type=file]::file-selector-button {
+
+
+    
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 1em 3em 1em 3em;
+    /* width: 261px; */
+    margin-left: 1.5em;
+    border: none;
+    background: #DF2834;
+    
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  input[type=file]::file-selector-button:hover {
+    background: #7a1f25;
+}
+
+.txtsend{
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.txtdownload{
+    color: #FFF;
+    font-family: PT Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+
+}
