@@ -2,10 +2,12 @@
 <html>
   <head>
       <meta charset="UTF-8">
-    <title>Загрузка файла</title>
+    <title>Hakaton</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/reset.css">
+    <!-- <link rel="stylesheet" href="static/css/button.css"> -->
   </head>
   <body>
     <!-- <div id="killnet">killnet</div> -->
@@ -14,30 +16,47 @@
         <div id="fon">
             <div class="wrapper">
                 <div class="header_wrapper">
-                    <div class="header_logo"> <!-- Логотип -->        
-                        <a href="./index.html" class="header_logo-link">
-                            <img src="./img/svg/logo.svg"  alt="" class="header_logo-pic">
-                        </a>
+                    <div class="container">
+                        <div class="logo">
+                          <img src="static/img/svg/logo.svg" alt="" width="260"/>
+                          </div>
+                        <nav>
+                          <ul>
+                            <li>Home</li>
+                            <li>About us</li>
+                          </ul>
+                          </nav>
                     </div>
-                    <hr width="90%" color="#541212">
-                        
-                </div>
-    <form id="uploadForm">
-        <label for="images" class="drop-container" id="dropcontainer">
-            <span class="drop-title">Переместите файл сюда</span>
-            или
-            <input type="file"  id="fileInput" onchange="enableSubmit()" />
-        </label>
+                    <hr />
+                    <form id="uploadForm">
+                        <label for="images" class="drop-container" id="dropcontainer">
+                            <span class="drop-title">Переместите файл сюда</span>
+                            или
+                            <div class="button2">
+                                <input type="file"  id="fileInput" onchange="enableSubmit()" />
+                            </div>
+                        </label>
 
-      <br>
-      <div class="button">
-        <input type="submit" id="submitButton" value="Отправить" class="hidden button2" disabled />
-      </div>
-    </form>
+                    <br>
+                    <div class="button">
+                        <input type="submit" id="submitButton" value="Отправить" class="hidden button2" disabled />
+                    </div>
+                    <!-- <main>
+                        <div class="button">
+                          <div class="text">Submit</div>
+                        </div>
+                        <div class="progress-bar"></div>
+                        <svg x="0px" y="0px"
+                         viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
+                          <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
+                        </svg>
+                    </main> -->
+                </form>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
     <div id="result"></div>
     <script src="static/js/script.js"></script>
+    <!-- <script src="static/js/button.js"></script> -->
   </body>
 </html>
