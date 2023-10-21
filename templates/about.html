@@ -5,39 +5,47 @@
     <title>Hakaton</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/reset.css">
-    <!-- <link rel="stylesheet" href="static/css/button.css"> -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/reset.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- <div id="killnet">killnet</div> -->
 
     <header class="header">
         <div id="fon">
             <div class="wrapper">
                 <div class="header_wrapper">
-                    <div style="gap: 140px;" class="container">
+                    <div class="container">
                         <div class="logo">
-                          <img src="static/img/svg/logo.svg" alt="" width="260"/>
-                        </div>
+                          <img src="/static/img/svg/logo.svg" alt="" width="260"/>
+                          </div>
                         <nav>
                           <ul>
-                            <li><a class="nav_link" href="/">Home</a></li>
+                            <li><a class="nav_link">Home</a></li>
                           </ul>
-                        </nav>
+                          </nav>
                     </div>
                     <hr />
+                    <form id="uploadForm">
+                        <label for="images" class="list-about" id="listabout">
+                          
+                          <div class="name">
+                            <img src="/static/img/namel.svg" />
+                          </div>
+                          
+                        </label>
+
+                        
+
+                        
+                    </form>
                 </div>
             </div>
         </div>
+        <div id="result" style="display: flex; justify-content: center;  flex-direction: column; gap: 15px; align-items: center; font-family: 'DM Sans', sans-serif;"></div>
     </header>
-    <main>
-    </main>
-    
-    <script src="static/js/script.js"></script>
-    <!-- <script src="static/js/button.js"></script> -->
+    <script src="/static/js/script.js"></script>
   </body>
 </html>
