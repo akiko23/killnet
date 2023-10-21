@@ -35,21 +35,18 @@ document.getElementById("uploadForm").addEventListener("submit", function(e) {
     if (file) {
         result.innerHTML = `<div style="font-family: 'DM Sans', sans-serif;c">Файл загружен: ${file.name}</div>
         <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 8px; margin-bottom: 20px;">
-        <div class="container2">
-            <div style="width: 850px;">
-                <input type="checkbox" id="zoomCheck">
-                <label for="zoomCheck">
-                <img src="static/resources/old_data_graph.png"></img> 
-                </label>
-            </div>
-            <div style="width: 850px;">
-                <input type="checkbox" id="zoomCheck">
-                <label for="zoomCheck">
-                <img src="static/resources/old_data_graph.png"></img> 
-                </label>
-            </div>
+        <div style="overflow: scroll">
+            <input type="checkbox" id="zoomCheck">
+            <label for="zoomCheck">
+            <img src="static/resources/old_data_graph.png"></img> 
+            </label>
         </div>
-            
+        <div>
+            <input type="checkbox" id="zoomCheck">
+            <label for="zoomCheck">
+            <img src="static/resources/new_data_graph.png"></img> 
+            </label>
+        </div>
             
             <div class="button_download_img" style="margin-bottom: 30px;">
                 <a href="static/resources/corrected_data.csv" class="button2" download>
