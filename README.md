@@ -24,9 +24,9 @@
       python -m venv venv
       .\venv\Scripts\activate
       ```
-3. Запустите приложение следующей командой:
+3. Установите зависимости и запустите приложение следующей командой:
    ```
-   uvicorn main:app
+   pip install -r requirements.txt && uvicorn main:app
    ```
 4. После этого у вас должен появится следующий текст:
 ![image](https://github.com/akiko23/killnet-aiinrailwayindustry/assets/101889433/38a73440-669a-4a8d-9a69-db8305494d3f)
