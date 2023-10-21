@@ -218,10 +218,11 @@ def save_correct_csv(input_dataset, output_dataset, output_image):
             trains *= -1
         p = [1, 0]
         for id__, road in roads.items():
-            if id1 not in checked_roads:
+            if id__ not in checked_roads:
                 if trains <= road[pos]:
                     stations[id1][id__][pos] -= trains
                     stations[id__][id1][p[pos]] -= trains
+                    checked_roads.append(id1)
                     break
                 else:
                     trains -= road[pos]
