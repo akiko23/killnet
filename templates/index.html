@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="static/css/reset.css">
     <!-- <link rel="stylesheet" href="static/css/button.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- <div id="killnet">killnet</div> -->
@@ -22,40 +25,34 @@
                           </div>
                         <nav>
                           <ul>
-                            <li>Home</li>
-                            <li>About us</li>
+                            <li><a class="nav_link">Home</a></li>
+                            <li><a class="nav_link" href="/about">About us</a></li>
                           </ul>
                           </nav>
                     </div>
                     <hr />
                     <form id="uploadForm">
                         <label for="images" class="drop-container" id="dropcontainer">
-                            <span class="drop-title">Переместите файл сюда</span>
-                            или
-                            <div class="button2">
-                                <input type="file"  id="fileInput" onchange="enableSubmit()" />
+                            <span class="drop-title">Drop the file here</span>
+                            <span>or</span>
+                            <div class="button3">
+                                <input type="file" id="fileInput" accept="*" onchange="enableSubmit()">
                             </div>
                         </label>
 
-                    <br>
-                    <div class="button">
-                        <input type="submit" id="submitButton" value="Отправить" class="hidden button2" disabled />
-                    </div>
-                    <!-- <main>
-                        <div class="button">
-                          <div class="text">Submit</div>
-                        </div>
-                        <div class="progress-bar"></div>
-                        <svg x="0px" y="0px"
-                         viewBox="0 0 25 30" style="enable-background:new 0 0 25 30;">
-                          <path class="check" class="st0" d="M2,19.2C5.9,23.6,9.4,28,9.4,28L23,2"/>
-                        </svg>
-                    </main> -->
-                </form>
+                        <br>
+                        
+                        <div class="button" style="margin-bottom: 30px;">
+                            <input type="submit" id="submitButton" value="Submit" class="hidden button2" disabled />
+                        </div>  
+                        
+                        
+                    </form>
+                </div>
             </div>
         </div>
+        <div id="result" style="display: flex; justify-content: center;  flex-direction: column; gap: 15px; align-items: center; font-family: 'DM Sans', sans-serif;"></div>
     </header>
-    <div id="result"></div>
     <script src="static/js/script.js"></script>
     <!-- <script src="static/js/button.js"></script> -->
   </body>
