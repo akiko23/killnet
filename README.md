@@ -7,3 +7,27 @@
 Стек решения: Python, html/css/js, FastAPI, networkx.
 
 Уникальность нашего решения заключается в масштабируемости (любой пользователь с корректным набором данных сможет оптимизировать свою ЖД сеть), а также в стеке и алгоритмическом подходе к решению задачи
+
+## Установка
+1. Склонируйте репозиторий и перейдите в папку с проектом
+  ```
+  git clone https://github.com/akiko23/killnet-aiinrailwayindustry && cd killnet-aiinrailwayindustry
+  ```
+2. Создайте виртуальное окружение и активируете его
+   
+   `Linux && MacOS`
+    ```
+    python3 -m venv venv && source venv/bin/activate
+    ```
+    `Windows`
+      ```
+      python -m venv venv
+      .\venv\Scripts\activate
+      ```
+3. Запустите приложение следующей командой:
+   ```
+   uvicorn main:app
+   ```
+4. После этого у вас должен появится следующий текст:
+![image](https://github.com/akiko23/killnet-aiinrailwayindustry/assets/101889433/38a73440-669a-4a8d-9a69-db8305494d3f)
+Переходите по http://localhost:8000 и наслаждайтесь :)
